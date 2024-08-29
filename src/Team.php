@@ -23,7 +23,7 @@ abstract class Team extends Model
      */
     public function allUsers()
     {
-        return $this->owner ? 
+        return $this->owner ?
             $this->users->merge([$this->owner]) :
             $this->users;
     }
